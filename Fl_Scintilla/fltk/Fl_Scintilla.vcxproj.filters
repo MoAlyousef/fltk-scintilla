@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{923d7627-e540-4d39-839f-95ec1044cefb}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="lexers">
+      <UniqueIdentifier>{f58b15d5-b3f6-4a57-a688-f8fab55d76fe}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="lexlib">
+      <UniqueIdentifier>{b52989b8-a2f0-46ac-a0f7-831ea99ebbea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fltk">
+      <UniqueIdentifier>{ea275a50-8a58-409e-958e-ed8ee2383c6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{3fd2ca01-7489-4f39-9543-bfdb7b631cfb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Fl_Scintilla.cxx">
+      <Filter>fltk</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatFLTK.cxx">
+      <Filter>fltk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexers\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexlib\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexlib\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexlib\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexlib\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexlib\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexlib\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexlib\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexlib\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexlib\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lexlib\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\*.cxx">
+      <Filter>lexers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Fl_Scintilla.h">
+      <Filter>fltk</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatFLTK.h">
+      <Filter>fltk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ILexer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Platform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SciLexer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Scintilla.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Sci_Position.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lexlib\*.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
