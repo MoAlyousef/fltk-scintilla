@@ -836,11 +836,7 @@ void Fl_Scintilla::StartDrag()
 		Fl::copy(drag_str_, drag_str_size_, 0);
 	}
 
-#if __APPLE__
-	Fl_X::dnd(1);
-#else
 	Fl::dnd();
-#endif
 
 	Scintilla::Editor::inDragDrop = ddNone;
 	SetDragPosition(Scintilla::SelectionPosition(Scintilla::invalidPosition));
