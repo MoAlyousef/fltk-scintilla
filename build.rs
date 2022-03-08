@@ -1,8 +1,11 @@
 use fltk_build::fltk_out_dir;
 use glob::glob;
 use std::path::PathBuf;
+use std::env;
 
 fn main() {
+    let manifest_dir = PathBuf::from(env::var("CARGO_MANIFEST_DIR").unwrap());
+    let target_triple = env::var("TARGET").unwrap();
     let fltk_out_dir = fltk_out_dir().unwrap();
     let mut v: Vec<PathBuf> = vec![];
     let lexers = glob("Fl_Scintilla/lexers/*.cxx").unwrap();
@@ -38,4 +41,9 @@ fn main() {
         .flag_if_supported("-fno-rtti")
         .flag_if_supported("-fpermissive")
         .compile("fl_scintilla");
+    
+    if target_triple.contains("windows-msvc") {
+        println!("cargo:rustc-link-search=native={}", manifest_dir.join("libs").display());
+        println!("cargo:rustc-link-lib=static=libiconvStatic");
+    }
 }

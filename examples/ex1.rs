@@ -7,6 +7,13 @@ use std::os::raw::c_void;
 // must be null terminated
 const KEYWORDS: &str = "let as break continue fn crate else enum for false if impl trait loop in match mod move mut struct type unsafe use where while\0";
 const TYPES: &str = "i8 u8 i16 u16 i32 u32 i64 u64 bool isize usize\0";
+const SAMPLE: &str = "
+// This is a simple main function
+fn main() {
+    let x: i32 = 5;
+    let y: i32 = 6;
+    let z = x + y;
+}\0";
 
 const SCLEX_RUST: usize = 111;
 const SCE_RUST_DEFAULT: usize = 0;
@@ -34,14 +41,6 @@ const SCE_RUST_BYTESTRING: usize = 21;
 const SCE_RUST_BYTESTRINGR: usize = 22;
 const SCE_RUST_BYTECHARACTER: usize = 23;
 const MARGIN_FOLD_INDEX: usize = 3;
-
-const SAMPLE: &str = "
-// This is a simple main function
-fn main() {
-    let x: i32 = 5;
-    let y: i32 = 6;
-    let z = x + y;
-}";
 
 unsafe fn sc_cb(notif: &SCNotification, data: *mut c_void) {
     let editor: &mut Scintilla = transmute(data);
@@ -85,7 +84,7 @@ fn main() {
     unsafe {
         sc.set_notify_raw(sc_cb, transmute(&mut sc.clone()));
         sc.send_editor_raw(SCI_CLEARALL, 0, 0);
-        sc.send_editor_raw(SCI_APPENDTEXT, SAMPLE.len(), transmute(SAMPLE.as_ptr()));
+        sc.send_editor_raw(SCI_APPENDTEXT, SAMPLE.len() -1, transmute(SAMPLE.as_ptr()));
 
         sc.send_editor_raw(SCI_SETMARGINTYPEN, 2, SC_MARGIN_NUMBER as _);
         sc.send_editor_raw(SCI_SETMARGINWIDTHN, 2, 20);
@@ -93,7 +92,7 @@ fn main() {
         sc.send_editor_raw(
             SCI_STYLESETFONT,
             STYLE_DEFAULT as _,
-            transmute("Courier New".as_ptr()),
+            transmute("Courier New\0".as_ptr()),
         );
         sc.send_editor_raw(SCI_STYLESETSIZE, STYLE_DEFAULT as _, 10);
         sc.send_editor_raw(SCI_STYLECLEARALL, 0, 0);
@@ -102,7 +101,7 @@ fn main() {
         sc.send_editor_raw(
             SCI_STYLESETFONT,
             STYLE_CALLTIP as _,
-            transmute("Courier New".as_ptr()),
+            transmute("Courier New\0".as_ptr()),
         );
         sc.send_editor_raw(SCI_STYLESETSIZE, STYLE_CALLTIP as _, 9);
 
@@ -138,7 +137,7 @@ fn main() {
         sc.send_editor_raw(
             SCI_SETPROPERTY,
             transmute("fold\0".as_ptr()),
-            transmute("1".as_ptr()),
+            transmute("1\0".as_ptr()),
         );
         sc.send_editor_raw(
             SCI_SETMARGINTYPEN,

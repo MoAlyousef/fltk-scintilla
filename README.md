@@ -1,6 +1,6 @@
 # fltk-scintilla
 
-Currently checked to build on Linux and MacOS. Should build on Windows using mingw64 if you have libiconv installed. You can build the example:
+Currently checked to build on Linux, MacOS and Windows-msvc. Should build on Windows-gnu if you have libiconv installed. You can build the example:
 ```
 $ cargo run --example ex1
 ```
