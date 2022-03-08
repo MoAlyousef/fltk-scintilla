@@ -23,9 +23,6 @@ jobs:
          if [ "$RUNNER_OS" == "Linux" ]; then
           sudo apt-get update && sudo apt-get install -y libpango1.0-dev libx11-dev libxext-dev libxft-dev libxinerama-dev libxcursor-dev libxrender-dev libxfixes-dev
          fi
-         if [ "$RUNNER_OS" == "Windows" ]; then
-          git clone https://github.com/pffang/libiconv-for-Windows --depth=1 && set INCLUDE=.\libiconv-for-Windows\include;%INCLUDE%
-         fi
       shell: bash
     - uses: actions/checkout@v2
     - name: Build
