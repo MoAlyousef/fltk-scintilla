@@ -43,7 +43,7 @@ fn main() {
         .flag_if_supported("-fpermissive");
 
     if target_triple.contains("windows-msvc") {
-        target.include("libs");
+        target.include("iconv");
         println!("cargo:rustc-link-search=native={}", manifest_dir.join("iconv").display());
         println!("cargo:rustc-link-lib=static=libiconvStatic");
     }
