@@ -1110,14 +1110,14 @@ double Scintilla::ElapsedTime::Duration(bool reset)
 
 class DynamicLibraryImpl : public Scintilla::DynamicLibrary {
 protected:
-#if WIN32
+#ifdef WIN32
 	HMODULE h;
 #else
 	void * h;
 #endif
 public:
 	explicit DynamicLibraryImpl(const char *modulePath) {
-#if WIN32
+#ifdef WIN32
 		h = ::LoadLibraryA(modulePath);
 #else
 		h = dlopen(modulePath, RTLD_LAZY);
@@ -1125,7 +1125,7 @@ public:
 	}
 
 	virtual ~DynamicLibraryImpl() {
-#if WIN32
+#ifdef WIN32
 		if (h != NULL) ::FreeLibrary(h);
 #else
 		if ( h != NULL ) dlclose(h);
@@ -1134,7 +1134,7 @@ public:
 
 	// Use GetProcAddress to get a pointer to the relevant function.
 	virtual Scintilla::Function FindFunction(const char *name) {
-#if WIN32
+#ifdef WIN32
 		if (h != NULL) {
 			// C++ standard doesn't like casts between function pointers and void pointers so use a union
 			union {
