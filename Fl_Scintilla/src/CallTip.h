@@ -8,6 +8,8 @@
 #ifndef CALLTIP_H
 #define CALLTIP_H
 
+#include <string>
+
 #ifdef SCI_NAMESPACE
 namespace Scintilla {
 #endif
