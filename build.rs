@@ -26,7 +26,8 @@ fn main() {
     }
     v.push(PathBuf::from("src/cfl_scintilla.cpp"));
 
-    cc::Build::new()
+    let mut target = cc::Build::new();
+    target
         .files(v)
         .cpp(true)
         .define("SCI_LEXER", None)
@@ -39,11 +40,13 @@ fn main() {
         .include(&fltk_out_dir.join("include"))
         .flag_if_supported("-w")
         .flag_if_supported("-fno-rtti")
-        .flag_if_supported("-fpermissive")
-        .compile("fl_scintilla");
-    
+        .flag_if_supported("-fpermissive");
+
     if target_triple.contains("windows-msvc") {
-        println!("cargo:rustc-link-search=native={}", manifest_dir.join("libs").display());
+        target.include("libs");
+        println!("cargo:rustc-link-search=native={}", manifest_dir.join("iconv").display());
         println!("cargo:rustc-link-lib=static=libiconvStatic");
     }
+
+    target.compile("fl_scintilla");
 }
