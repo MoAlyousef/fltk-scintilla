@@ -1104,7 +1104,7 @@ double Scintilla::ElapsedTime::Duration(bool reset)
 }
 
 // ====================== Platform::DynamicLibrary ok ===================================
-#if !WIN32
+#ifndef WIN32
 #include <dlfcn.h>
 #endif
 
