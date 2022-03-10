@@ -2,8 +2,7 @@
 #![allow(non_upper_case_globals)]
 #![allow(dead_code)]
 
-mod sys;
-use sys::*;
+use fltk_scintilla_sys::sys::*;
 
 use fltk::prelude::*;
 use fltk::utils::FlString;

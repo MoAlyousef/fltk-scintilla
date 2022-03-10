@@ -1,0 +1,12 @@
+[package]
+name = "fltk-scintilla-sys"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[build-dependencies]
+fltk-sys = "1.2.25"
+fltk-build = "0.1"
+cc = { version = "1.0", features = ["parallel"] }
+glob = "*"

@@ -57,6 +57,7 @@ fn main() {
     let mut sc = Scintilla::default_fill();
     win.end();
     win.show();
+    win.wait_for_expose();
 
     sc.handle(|sc, ev| match ev {
         Event::KeyDown => {
@@ -64,10 +65,11 @@ fn main() {
                 if app::compose().is_some() {
                     unsafe {
                         let len = fltk::utils::char_len(ch);
+                        let s = std::ffi::CString::new(ch.to_string()).unwrap();
                         sc.send_editor_raw(
                             SCI_ADDTEXT,
                             len,
-                            transmute(ch.to_string().as_ptr()),
+                            transmute(s.into_raw()),
                         );
                     }
                     true
@@ -196,3 +198,4 @@ fn main() {
 
     a.run().unwrap();
 }
+

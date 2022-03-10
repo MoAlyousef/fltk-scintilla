@@ -3,16 +3,9 @@ name = "fltk-scintilla"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 fltk = "1.2.25"
 fltk-sys = "1.2.25"
 paste = "1"
 scintilla-sys = "*"
-
-[build-dependencies]
-fltk-sys = "1.2.25"
-fltk-build = "0.1"
-cc = { version = "1.0", features = ["parallel"] }
-glob = "*"
+fltk-scintilla-sys = { version = "0.1.0", path = "fltk-scintilla-sys" }
