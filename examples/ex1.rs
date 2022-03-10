@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 use fltk::{enums::*, prelude::*, *};
 use fltk_scintilla::Scintilla;
 use scintilla_sys::*;
@@ -54,7 +56,7 @@ fn main() {
     let a = app::App::default().with_scheme(app::Scheme::Gtk);
 
     let mut win = window::Window::default().with_size(640, 480);
-    let mut sc = Scintilla::default_fill();
+    let mut sc = Scintilla::new(5, 5, 630, 470, None);
     win.end();
     win.show();
     win.wait_for_expose();
@@ -68,7 +70,11 @@ fn main() {
                         let s = std::ffi::CString::new(ch.to_string()).unwrap();
                         sc.send_editor_raw(
                             SCI_ADDTEXT,
-                            len,
+                            if cfg!(target_env = "msvc") {
+                                len - 1
+                            } else {
+                                len
+                            },
                             transmute(s.into_raw()),
                         );
                     }

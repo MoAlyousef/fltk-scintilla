@@ -46,6 +46,8 @@ fn main() {
         target.include("iconv");
         println!("cargo:rustc-link-search=native={}", manifest_dir.join("iconv").display());
         println!("cargo:rustc-link-lib=static=libiconvStatic");
+    } else if target_triple.contains("windows-gnu") {
+        println!("cargo:rustc-link-lib=iconv");
     }
 
     target.compile("fl_scintilla");
